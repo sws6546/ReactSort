@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import {TextField, Button, Select, MenuItem, InputLabel, FormControl} from '@mui/material';
+import {TextField, Button, Select, MenuItem, InputLabel, FormControl, Typography} from '@mui/material';
 import './Chart.css';
 
 const Chart = () => {
@@ -75,6 +75,9 @@ const Chart = () => {
                 <Button variant="contained" size="large" onClick={Random}>Losuj</Button>
                 <TextField id="speedInput" label="Podaj prędkość (ms)" variant="filled" type="number"/>
                 <Button variant="contained" size="large" onClick={() => setSpeed(document.getElementById('speedInput').value)}>Zmień prędkość</Button>
+            </div>
+            <div>
+                <Typography variant='h5'>liczba elementów: {list.length}, prędkość: {speed}ms</Typography>
             </div>
             <div className="Chart">
                 {

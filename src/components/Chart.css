@@ -13,7 +13,7 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 10px;
+    gap: 5px;
     /* padding: 10px; */
     align-items: flex-end;
 }
